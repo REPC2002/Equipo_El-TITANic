@@ -1,0 +1,38 @@
+.container_book {
+    width: 89vw;
+    min-height: 79vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+      url("../Images/Background_Books.jpg");
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+.container_image_author {
+    width: 100%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+h2 {
+    font-size: 50px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+p {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.img_author img {
+    display: block;
+    margin: 0 auto; 
+}
