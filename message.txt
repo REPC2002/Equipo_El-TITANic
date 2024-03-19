@@ -135,7 +135,7 @@
   {
     "nombre": "La sombra del viento",
     "autor": "Carlos Ruiz Zafón",
-    "imagen_url": "https://example.com/la_sombra_del_viento.jpg",
+    "imagen_url": "https://m.media-amazon.com/images/I/911h1QUr7OL._AC_UF1000,1000_QL80_.jpg",
     "sinopsis": "La historia de un niño que descubre un libro maldito y se embarca en una búsqueda para descubrir su historia.",
     "categoria": "Ficción literaria"
   }
