@@ -71,6 +71,20 @@ class WebRequestHandler(BaseHTTPRequestHandler):
 
 # /books/\d+
     def get_books(self, book_id):
+        # Obtiene el historial de libros
+        def getRecomended():
+            session_id = self.get_session()
+            bookKey = f"{book_id}"
+            book_list = r.lrange(f"session: {session_id}", 0, -1)
+                
+            self.wfile.write("<h3>Historial</h3>".encode("utf-8"))
+            for book in book_list:
+                if book is bookKey.encode('utf-8'):
+                    continue
+                bookContent = r.get(book)
+                bookTitle = re.search(r"(?<=<h2>)(.*)(?=</h2>)", bookContent.decode('utf-8'))
+                self.wfile.write(f"<br> <a href=/books/{book.decode()}> Libro {book.decode()}: {bookTitle.group()} </a>".encode("utf-8"))
+            return book_info, book_list, session_id
 
         # Obtiene el historial de libros
         def getHistory():
@@ -82,7 +96,9 @@ class WebRequestHandler(BaseHTTPRequestHandler):
             for book in book_list:
                 if book is bookKey.encode('utf-8'):
                     continue
-                self.wfile.write(f"<br> <a href=/books/{book.decode()}> Libro: {book.decode()} </a>".encode("utf-8"))
+                bookContent = r.get(book)
+                bookTitle = re.search(r"(?<=<h2>)(.*)(?=</h2>)", bookContent.decode('utf-8'))
+                self.wfile.write(f"<br> <a href=/books/{book.decode()}> Libro {book.decode()}: {bookTitle.group()} </a>".encode("utf-8"))
             return book_info, book_list, session_id
 
 #######################################################
@@ -102,7 +118,8 @@ class WebRequestHandler(BaseHTTPRequestHandler):
             r.lpush(f"session: {session_id}", bookKey)
         for book in book_list:
             self.wfile.write(f"<br> book: {book}".encode("utf-8"))
-
+            
+        getRecomended()
         getHistory()
     
 #  /
