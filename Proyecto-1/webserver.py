@@ -71,7 +71,7 @@ class WebRequestHandler(BaseHTTPRequestHandler):
 
 # /books/\d+
     def get_books(self, book_id):
-        # Obtiene el historial de libros
+        # Obtiene las recomendaciones de libros
         def getRecomended():
             session_id = self.get_session()
             category = self.retrieve_book_category(book_id)
