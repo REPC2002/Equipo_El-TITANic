@@ -1,0 +1,12 @@
+.container {
+    width: 100vw; /* Ancho completo de la pantalla */
+    height: 100vh; /* Altura completa de la pantalla */
+    padding: 5%;
+    background-image: linear-gradient(rgba(13, 95, 218, 0.5),rgba(13, 95, 218, 0.5)), 
+        url(https://img.freepik.com/foto-gratis/muelle-lago-hallstatt-austria_181624-44201.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
