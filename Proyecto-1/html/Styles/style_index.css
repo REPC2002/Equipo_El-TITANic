@@ -10,3 +10,10 @@
     align-items: center;
     justify-content: center;
   }
+  .search_bar{
+    width: 100%;
+    max-width: 700px;
+    background:rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+  }
