@@ -1,4 +1,12 @@
+from jinja2 import Template
+import json
+import os
 
+with open('book_data.json', 'r') as file:
+    books = json.load(file)
+
+# Your HTML template with placeholders for dynamic data
+html_template = '''
 <!DOCTYPE html>
 <html lang="es-mx">
 <head>
@@ -73,23 +81,45 @@
 <body>
     <div class="container">
         <main class="info_container">
-            <h2> El señor de los anillos: La comunidad del anillo </h2>
-            <h3> J.R.R. Tolkien </h3>
+            <h2> {{nombre}} </h2>
+            <h3> {{autor}} </h3>
             <!-- Información y Imagen del autor -->
             <div class="author_info">
                 <img src="../Images/Authors/book1.jpg">
                 <p>
-                    Una épica historia de fantasía que sigue las aventuras de un joven hobbit llamado Frodo Bolsón.
+                    {{sinopsis}}
                 </p>
                  <p>
-                    Categorias: Fantasía
+                    Categorias: {{categoria}}
                 </p>
             </div>
         </main>
         <div class="book_image">
             <!-- Imagen del Libro -->
-            <img src="https://www.planetadelibros.com.mx/usuaris/libros/fotos/360/m_libros/359895_portada_el-senor-de-los-anillos-1-la-comunidad-del-anillo_j-r-r-tolkien_202206071121.jpg">  
+            <img src="{{imagen_url}}">  
         </div>
     </div>
 </body>
 </html>
+'''
+    
+    # Directory to save the HTML files
+output_directory = "./html/books"
+
+# Create the directory if it doesn't exist
+os.makedirs(output_directory, exist_ok=True)
+
+# Render the template for each object in the dictionary
+for key, book in books.items():
+    # Render the template with the object's attributes
+    template = Template(html_template)
+    rendered_html = template.render(book)
+
+    # Generate the file path for the HTML file
+    file_path = os.path.join(output_directory, f"book{key}.html")
+
+    # Write the rendered HTML to the file
+    with open(file_path, "w") as file:
+        file.write(rendered_html)
+
+    print(f"HTML file generated for {key} at: {file_path}")

@@ -1,22 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="es-mx">
-    <head>
-        <title>Proyecto 01</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-    <h1>La Biblioteca</h1>       
-    
-    <main>
-            <h2> La Metamorfosis </h2>
-            <p> Patrick Alvarado </p>            <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat quis dui eu aliquam. Mauris sed dolor purus. Etiam eu sodales diam, id condimentum justo. Curabitur in massa ultricies, gravida sapien nec, consectetur sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer eu nulla vel nisl efficitur aliquet. Morbi blandit a diam convallis malesuada. Phasellus quis pulvinar erat. Etiam sit amet metus tortor. Maecenas nec enim lobortis diam vulputate hendrerit eget et urna. Proin ut odio nibh.
-            </p>
-            <p>
-                Maecenas posuere turpis sed neque ultrices vestibulum. Nam accumsan nunc eget massa vehicula cursus. Donec mollis urna elit, vitae gravida risus tincidunt vitae. Sed a iaculis dolor. Nulla tempus feugiat quam non pellentesque. In sodales, metus ac viverra varius, dui est pulvinar dui, ac sollicitudin nibh dui sit amet felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis fermentum est et ligula vehicula suscipit. Suspendisse auctor feugiat auctor. Vestibulum nec diam at massa euismod congue id sit amet velit. Suspendisse potenti. Nullam velit orci, tincidunt sed varius sollicitudin, elementum eu nulla. Morbi purus neque, dapibus a dignissim a, accumsan in dui. Integer sed aliquam erat. Maecenas rhoncus tortor urna, non rutrum urna faucibus a. Aenean sed lorem id enim aliquam porta nec ac nisi. 
-            </p>
-    </main>
-    </body>
+<head>
+    <title>Proyecto 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Norican&family=Poly:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kumar+One+Outline&family=Norican&family=Poly:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julee&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Knewave&family=Kumar+One+Outline&family=Norican&family=Poly:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            width: 89vw;
+            min-height: 79vh;
+            padding: 5%;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+            url("../Images/Background_Books.jpg");
+            background-position: left;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .info_container {
+            text-align: center;
+            max-width: 600px;
+            margin-right: 20px; /* Espaciado entre la informacion */
+            background-color: rgba(224, 224, 224, 0.8);
+        }
+        .info_container h3 {
+            font-family: "Knewave", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .author_info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Espaciado entre el título del libro y la información del autor */
+        }
+        .author_info p {text-align: left;}
+        
+        .author_info img {
+            width: 250px; 
+            margin-bottom: 10px;
+        }
+        
+        .book_image img {width: 300px;}
+        
+        h2 {
+            margin-bottom: 20px;
+            font-style: italic;
+            font-size: xx-large;
+            font-family: "Norican", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .info_container p {
+            font-family: "K2D", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="info_container">
+            <h2> 1984 </h2>
+            <h3> George Orwell </h3>
+            <!-- Información y Imagen del autor -->
+            <div class="author_info">
+                <img src="../Images/Authors/book1.jpg">
+                <p>
+                    Una novela distópica que describe un futuro totalitario donde el gobierno controla todos los aspectos de la vida.
+                </p>
+                 <p>
+                    Categorias: Ciencia ficción
+                </p>
+            </div>
+        </main>
+        <div class="book_image">
+            <!-- Imagen del Libro -->
+            <img src="https://m.media-amazon.com/images/I/61NAx5pd6XL._AC_UF1000,1000_QL80_.jpg">  
+        </div>
+    </div>
+</body>
 </html>

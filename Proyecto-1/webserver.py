@@ -4,7 +4,7 @@ import redis
 from http.cookies import SimpleCookie
 import uuid
 from urllib.parse import parse_qsl, urlparse
-
+import json
 mappings = {
         (r"^/books/(?P<book_id>\d+)$", "get_books"),
         (r"^/$", "index"),
@@ -74,16 +74,20 @@ class WebRequestHandler(BaseHTTPRequestHandler):
         # Obtiene el historial de libros
         def getRecomended():
             session_id = self.get_session()
+            category = self.retrieve_book_category(book_id)
             bookKey = f"{book_id}"
-            book_list = r.lrange(f"session: {session_id}", 0, -1)
-                
-            self.wfile.write("<h3>Historial</h3>".encode("utf-8"))
-            for book in book_list:
-                if book is bookKey.encode('utf-8'):
+
+            booksInCategory = r.get(category)
+            booksInCategory = json.loads(booksInCategory)       
+
+            self.wfile.write("<h3>Recomendados</h3>".encode("utf-8"))
+
+            for book in booksInCategory:
+                if book is bookKey:
                     continue
                 bookContent = r.get(book)
                 bookTitle = re.search(r"(?<=<h2>)(.*)(?=</h2>)", bookContent.decode('utf-8'))
-                self.wfile.write(f"<br> <a href=/books/{book.decode()}> Libro {book.decode()}: {bookTitle.group()} </a>".encode("utf-8"))
+                self.wfile.write(f"<br> <a href=/books/{book}> Libro {book}: {bookTitle.group()} </a>".encode("utf-8"))
             return book_info, book_list, session_id
 
         # Obtiene el historial de libros
@@ -111,13 +115,13 @@ class WebRequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         book_info = r.get(bookKey) or "<h1> No existe el libro </h1>".encode("utf-8")
         self.wfile.write(book_info)
-        self.wfile.write(f"<br>session: {session_id}".encode("utf-8"))
+        # self.wfile.write(f"<br>session: {session_id}".encode("utf-8"))
         book_list = r.lrange(f"session: {session_id}", 0, -1)
 
         if bookKey.encode('utf-8') not in book_list:
             r.lpush(f"session: {session_id}", bookKey)
-        for book in book_list:
-            self.wfile.write(f"<br> book: {book}".encode("utf-8"))
+        # for book in book_list:
+            # self.wfile.write(f"<br> book: {book}".encode("utf-8"))
             
         getRecomended()
         getHistory()
@@ -147,15 +151,26 @@ class WebRequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         error_message = "<h1>La clave no existe o no se proporcionó.</h1>"
         self.wfile.write(error_message.encode("utf-8"))
-
+    def retrieve_book_category(self, book_id):
+        # redis variable
+        json_string = r.get(f'book_data:{book_id}')
+        if json_string:
+            book_data = json.loads(json_string)
+            return book_data["categoria"]
+        else:
+            return None
 # Buscar libros
     def searchBooks(self, query):
         resultado = []
-        values = r.keys()
+        values = r.keys("[1-999999]")
+        # values = r.keys()
+        print (values)
         for value in values:
+            
             libro = r.get(value)
             if libro and query.lower() in libro.decode('utf-8').lower():
-                resultado.append(f"<a href='/books/{value.decode('utf-8')}'>{libro.decode('utf-8')}</a>")
+                book_data = json.loads(r.get(f'book_data:{value.decode("utf-8")}'))
+                resultado.append(f"<a href=/books/{value.decode('utf-8')}>{book_data['nombre']}</a>")
 
         return f"<h2>Resultados</h2><br>{resultado}".encode("utf-8")
 
