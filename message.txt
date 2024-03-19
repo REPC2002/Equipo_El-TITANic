@@ -1,0 +1,142 @@
+[
+  {
+    "nombre": "El señor de los anillos",
+    "autor": "J.R.R. Tolkien",
+    "imagen_url": "https://example.com/el_senor_de_los_anillos.jpg",
+    "sinopsis": "Una épica historia de fantasía que sigue las aventuras de un joven hobbit llamado Frodo Bolsón.",
+    "categoria": "Fantasía"
+  },
+  {
+    "nombre": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "imagen_url": "https://example.com/cien_anos_de_soledad.jpg",
+    "sinopsis": "La historia de la familia Buendía y su pueblo, Macondo, a lo largo de varias generaciones.",
+    "categoria": "Realismo mágico"
+  },
+  {
+    "nombre": "1984",
+    "autor": "George Orwell",
+    "imagen_url": "https://example.com/1984.jpg",
+    "sinopsis": "Una novela distópica que describe un futuro totalitario donde el gobierno controla todos los aspectos de la vida.",
+    "categoria": "Ciencia ficción"
+  },
+  {
+    "nombre": "Orgullo y prejuicio",
+    "autor": "Jane Austen",
+    "imagen_url": "https://example.com/orgullo_y_prejuicio.jpg",
+    "sinopsis": "Una historia de amor y valores sociales en la Inglaterra del siglo XIX.",
+    "categoria": "Clásico"
+  },
+  {
+    "nombre": "Harry Potter y la piedra filosofal",
+    "autor": "J.K. Rowling",
+    "imagen_url": "https://example.com/harry_potter_y_la_piedra_filosofal.jpg",
+    "sinopsis": "Las aventuras de un niño huérfano que descubre que es un mago y asiste a una escuela de magia.",
+    "categoria": "Fantasía"
+  },
+  {
+    "nombre": "Matar un ruiseñor",
+    "autor": "Harper Lee",
+    "imagen_url": "https://example.com/matar_un_ruisenor.jpg",
+    "sinopsis": "La historia de una niña llamada Scout Finch y su padre, un abogado, en Alabama durante la Gran Depresión.",
+    "categoria": "Ficción literaria"
+  },
+  {
+    "nombre": "El retrato de Dorian Gray",
+    "autor": "Oscar Wilde",
+    "imagen_url": "https://example.com/el_retrato_de_dorian_gray.jpg",
+    "sinopsis": "La historia de un joven que desea permanecer joven y hermoso mientras su retrato envejece en su lugar.",
+    "categoria": "Clásico"
+  },
+  {
+    "nombre": "La metamorfosis",
+    "autor": "Franz Kafka",
+    "imagen_url": "https://example.com/la_metamorfosis.jpg",
+    "sinopsis": "La historia de Gregor Samsa, quien se despierta una mañana transformado en un insecto gigante.",
+    "categoria": "Ficción literaria"
+  },
+  {
+    "nombre": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes",
+    "imagen_url": "https://example.com/don_quijote_de_la_mancha.jpg",
+    "sinopsis": "Las aventuras de un caballero soñador y su fiel escudero, Sancho Panza.",
+    "categoria": "Clásico"
+  },
+  {
+    "nombre": "Las crónicas de Narnia: El león, la bruja y el armario",
+    "autor": "C.S. Lewis",
+    "imagen_url": "https://example.com/el_leon_la_bruja_y_el_armario.jpg",
+    "sinopsis": "Cuatro niños encuentran un mundo mágico al otro lado de un armario y se embarcan en una aventura para derrotar a la malvada bruja blanca.",
+    "categoria": "Fantasía"
+  },
+  {
+    "nombre": "La odisea",
+    "autor": "Homero",
+    "imagen_url": "https://example.com/la_odisea.jpg",
+    "sinopsis": "La historia del regreso del héroe griego Odiseo a su hogar después de la Guerra de Troya.",
+    "categoria": "Épico"
+  },
+  {
+    "nombre": "El gran Gatsby",
+    "autor": "F. Scott Fitzgerald",
+    "imagen_url": "https://example.com/el_gran_gatsby.jpg",
+    "sinopsis": "La historia del misterioso millonario Jay Gatsby y su obsesión por recuperar un amor del pasado.",
+    "categoria": "Ficción literaria"
+  },
+  {
+    "nombre": "El principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "imagen_url": "https://example.com/el_principito.jpg",
+    "sinopsis": "Un piloto se encuentra varado en el desierto donde conoce a un pequeño príncipe de otro planeta.",
+    "categoria": "Infantil"
+  },
+  {
+    "nombre": "Anna Karenina",
+    "autor": "León Tolstói",
+    "imagen_url": "https://example.com/anna_karenina.jpg",
+    "sinopsis": "La historia de Anna Karenina, una mujer atrapada en un matrimonio infeliz, y su amorío con el oficial conde Vronsky.",
+    "categoria": "Clásico"
+  },
+  {
+    "nombre": "Drácula",
+    "autor": "Bram Stoker",
+    "imagen_url": "https://example.com/dracula.jpg",
+    "sinopsis": "La historia del conde Drácula, un vampiro que busca extender su influencia sobre Inglaterra.",
+    "categoria": "Terror"
+  },
+  {
+    "nombre": "La casa de los espíritus",
+    "autor": "Isabel Allende",
+    "imagen_url": "https://example.com/la_casa_de_los_espiritus.jpg",
+    "sinopsis": "La historia de la familia Trueba en Chile a lo largo de varias generaciones.",
+    "categoria": "Realismo mágico"
+  },
+  {
+    "nombre": "Moby Dick",
+    "autor": "Herman Melville",
+    "imagen_url": "https://example.com/moby_dick.jpg",
+    "sinopsis": "La obsesión del capitán Ahab por cazar a la gran ballena blanca.",
+    "categoria": "Aventura"
+  },
+  {
+    "nombre": "El guardián entre el centeno",
+    "autor": "J.D. Salinger",
+    "imagen_url": "https://example.com/el_guardian_entre_el_centeno.jpg",
+    "sinopsis": "La historia de Holden Caulfield, un adolescente alienado que busca la autenticidad en un mundo falso.",
+    "categoria": "Ficción literaria"
+  },
+  {
+    "nombre": "Un mundo feliz",
+    "autor": "Aldous Huxley",
+    "imagen_url": "https://example.com/un_mundo_feliz.jpg",
+    "sinopsis": "Una sociedad futurista donde la felicidad se ha convertido en la principal preocupación, pero a un costo terrible.",
+    "categoria": "Ciencia ficción"
+  },
+  {
+    "nombre": "La sombra del viento",
+    "autor": "Carlos Ruiz Zafón",
+    "imagen_url": "https://example.com/la_sombra_del_viento.jpg",
+    "sinopsis": "La historia de un niño que descubre un libro maldito y se embarca en una búsqueda para descubrir su historia.",
+    "categoria": "Ficción literaria"
+  }
+]
