@@ -1,142 +1,163 @@
 {
-    "1":{
-      "nombre": "El señor de los anillos: La comunidad del anillo",
-      "autor": "J.R.R. Tolkien",
-      "imagen_url": "https://www.planetadelibros.com.mx/usuaris/libros/fotos/360/m_libros/359895_portada_el-senor-de-los-anillos-1-la-comunidad-del-anillo_j-r-r-tolkien_202206071121.jpg",
-      "sinopsis": "Una épica historia de fantasía que sigue las aventuras de un joven hobbit llamado Frodo Bolsón.",
-      "categoria": "Fantasía"
-    },
-    "2":{
-      "nombre": "Cien años de soledad",
-      "autor": "Gabriel García Márquez",
-      "imagen_url": "https://m.media-amazon.com/images/I/71YoFJSz3LL._AC_UF1000,1000_QL80_.jpg",
-      "sinopsis": "La historia de la familia Buendía y su pueblo, Macondo, a lo largo de varias generaciones.",
-      "categoria": "Realismo mágico"
-    },
-   "3":{
-      "nombre": "1984",
-      "autor": "George Orwell",
-      "imagen_url": "https://m.media-amazon.com/images/I/61NAx5pd6XL._AC_UF1000,1000_QL80_.jpg",
-      "sinopsis": "Una novela distópica que describe un futuro totalitario donde el gobierno controla todos los aspectos de la vida.",
-      "categoria": "Ciencia ficción"
-    },
-    "4":{
-      "nombre": "Orgullo y prejuicio",
-      "autor": "Jane Austen",
-      "imagen_url": "https://m.media-amazon.com/images/I/81smOptGtLL._AC_UF1000,1000_QL80_.jpg",
-      "sinopsis": "Una historia de amor y valores sociales en la Inglaterra del siglo XIX.",
-      "categoria": "Clásico"
-    },
-    "5":{
-      "nombre": "Harry Potter y la piedra filosofal",
-      "autor": "J.K. Rowling",
-      "imagen_url": "https://m.media-amazon.com/images/I/51uxZ1EkT4L.jpg",
-      "sinopsis": "Las aventuras de un niño huérfano que descubre que es un mago y asiste a una escuela de magia.",
-      "categoria": "Fantasía"
-    },
-    "6":{
-      "nombre": "Matar un ruiseñor",
-      "autor": "Harper Lee",
-      "imagen_url": "https://m.media-amazon.com/images/I/81+j6JIEweL._AC_UF1000,1000_QL80_.jpg",
-      "sinopsis": "La historia de una niña llamada Scout Finch y su padre, un abogado, en Alabama durante la Gran Depresión.",
-      "categoria": "Ficción literaria"
-    },
-    "7":{
-      "nombre": "El retrato de Dorian Gray",
-      "autor": "Oscar Wilde",
-      "imagen_url": "https://www.planetadelibros.com.mx/usuaris/libros/fotos/383/m_libros/382805_portada_el-retrato-de-dorian-gray_oscar-wilde_202307191606.jpg",
-      "categoria": "Clásico"
-    },
-    "8":{
-      "nombre": "La metamorfosis",
-      "autor": "Franz Kafka",
-      "imagen_url": "https://images.cdn3.buscalibre.com/fit-in/360x360/7c/f8/7cf84202b1f8676cee2ea47dc152ba1b.jpg",
-      "sinopsis": "La historia de Gregor Samsa, quien se despierta una mañana transformado en un insecto gigante.",
-      "categoria": "Ficción literaria"
-    },
-    "9":{
-      "nombre": "Don Quijote de la Mancha",
-      "autor": "Miguel de Cervantes",
-      "imagen_url": "https://www.elsotano.com/imagenes_grandes/9788408/978840827088.JPG",
-      "sinopsis": "Las aventuras de un caballero soñador y su fiel escudero, Sancho Panza.",
-      "categoria": "Clásico"
-    },
-    "10":{
-      "nombre": "Las crónicas de Narnia: El león, la bruja y el armario",
-      "autor": "C.S. Lewis",
-      "imagen_url": "https://m.media-amazon.com/images/I/91QUMbfwnTL._AC_UF1000,1000_QL80_.jpg",
-      "sinopsis": "Cuatro niños encuentran un mundo mágico al otro lado de un armario y se embarcan en una aventura para derrotar a la malvada bruja blanca.",
-      "categoria": "Fantasía"
-    },
-    "11":{
-      "nombre": "La odisea",
-      "autor": "Homero",
-      "imagen_url": "https://pendulo.com/imagenes_grandes/9788494/978849474587.GIF",
-      "sinopsis": "La historia del regreso del héroe griego Odiseo a su hogar después de la Guerra de Troya.",
-      "categoria": "Épico"
-    },
-    "12":{
-      "nombre": "El gran Gatsby",
-      "autor": "F. Scott Fitzgerald",
-      "imagen_url": "https://m.media-amazon.com/images/I/71kcZyIi2kL._AC_UF894,1000_QL80_.jpg",
-      "sinopsis": "La historia del misterioso millonario Jay Gatsby y su obsesión por recuperar un amor del pasado.",
-      "categoria": "Ficción literaria"
-    },
-    "13":{
-      "nombre": "El principito",
-      "autor": "Antoine de Saint-Exupéry",
-      "imagen_url": "https://m.media-amazon.com/images/I/71AVK5VIAzL._AC_UF1000,1000_QL80_.jpg",
-      "sinopsis": "Un piloto se encuentra varado en el desierto donde conoce a un pequeño príncipe de otro planeta.",
-      "categoria": "Infantil"
-    },
-    "14":{
-      "nombre": "Anna Karenina",
-      "autor": "Lev Tolstói",
-      "imagen_url": "https://m.media-amazon.com/images/I/71wLs1YK8yL._AC_UF1000,1000_QL80_.jpg",
-      "sinopsis": "La historia de Anna Karenina, una mujer atrapada en un matrimonio infeliz, y su amorío con el oficial conde Vronsky.",
-      "categoria": "Clásico"
-    },
-    "15":{
-      "nombre": "Drácula",
-      "autor": "Bram Stoker",
-      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_630063-MLU69932321881_062023-O.webp",
-      "sinopsis": "La historia del conde Drácula, un vampiro que busca extender su influencia sobre Inglaterra.",
-      "categoria": "Terror"
-    },
-  "16":  {
-      "nombre": "La casa de los espíritus",
-      "autor": "Isabel Allende",
-      "imagen_url": "https://m.media-amazon.com/images/I/914oLv5QzaL._AC_UF1000,1000_QL80_.jpg",
-      "sinopsis": "La historia de la familia Trueba en Chile a lo largo de varias generaciones.",
-      "categoria": "Realismo mágico"
-    },
-    "17":{
-      "nombre": "Moby Dick",
-      "autor": "Herman Melville",
-      "imagen_url": "https://pendulo.com/imagenes_grandes/9788491/978849104961.GIF",
-      "sinopsis": "La obsesión del capitán Ahab por cazar a la gran ballena blanca.",
-      "categoria": "Aventura"
-    },
-  "18":  {
-      "nombre": "El guardián entre el centeno",
-      "autor": "J.D. Salinger",
-      "imagen_url": "https://m.media-amazon.com/images/I/713aAloHwDL._AC_UF894,1000_QL80_.jpg",
-      "sinopsis": "La historia de Holden Caulfield, un adolescente alienado que busca la autenticidad en un mundo falso.",
-      "categoria": "Ficción literaria"
-    },
-    "19":
-    {
-      "nombre": "Un mundo feliz",
-      "autor": "Aldous Huxley",
-      "imagen_url": "https://example.com/un_mundo_feliz.jpg",
-      "sinopsis": "Una sociedad futurista donde la felicidad se ha convertido en la principal preocupación, pero a un costo terrible.",
-      "categoria": "Ciencia ficción"
-    },
-  "20":  {
-      "nombre": "La sombra del viento",
-      "autor": "Carlos Ruiz Zafón",
-      "imagen_url": "https://m.media-amazon.com/images/I/911h1QUr7OL._AC_UF1000,1000_QL80_.jpg",
-      "sinopsis": "La historia de un niño que descubre un libro maldito y se embarca en una búsqueda para descubrir su historia.",
-      "categoria": "Ficción literaria"
-    }
+  "1":{
+    "nombre": "El señor de los anillos: La comunidad del anillo",
+    "autor": "J.R.R. Tolkien",
+    "imagen_url": "https://www.planetadelibros.com.mx/usuaris/libros/fotos/360/m_libros/359895_portada_el-senor-de-los-anillos-1-la-comunidad-del-anillo_j-r-r-tolkien_202206071121.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/J._R._R._Tolkien%2C_ca._1925.jpg",
+    "sinopsis": "Una épica historia de fantasía que sigue las aventuras de un joven hobbit llamado Frodo Bolsón.",
+    "categoria": "Fantasía"
+  },
+  "2":{
+    "nombre": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "imagen_url": "https://m.media-amazon.com/images/I/71YoFJSz3LL._AC_UF1000,1000_QL80_.jpg",
+    "autor_imagen_url": "https://historia.nationalgeographic.com.es/medio/2021/03/05/captura-de-pantalla-2021-03-05-a-las-114744_ee7981da_550x696.png",
+    "sinopsis": "La historia de la familia Buendía y su pueblo, Macondo, a lo largo de varias generaciones.",
+    "categoria": "Realismo mágico"
+  },
+ "3":{
+    "nombre": "1984",
+    "autor": "George Orwell",
+    "imagen_url": "https://m.media-amazon.com/images/I/61NAx5pd6XL._AC_UF1000,1000_QL80_.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/George_Orwell%2C_c._1940_%2841928180381%29.jpg/1200px-George_Orwell%2C_c._1940_%2841928180381%29.jpg",
+    "sinopsis": "Una novela distópica que describe un futuro totalitario donde el gobierno controla todos los aspectos de la vida.",
+    "categoria": "Ciencia ficción"
+  },
+  "4":{
+    "nombre": "Orgullo y prejuicio",
+    "autor": "Jane Austen",
+    "imagen_url": "https://m.media-amazon.com/images/I/81smOptGtLL._AC_UF1000,1000_QL80_.jpg",
+    "autor_imagen_url": "https://www.biografiasyvidas.com/biografia/a/fotos/austen_jane.jpg",
+    "sinopsis": "Una historia de amor y valores sociales en la Inglaterra del siglo XIX.",
+    "categoria": "Clásico"
+  },
+  "5":{
+    "nombre": "Harry Potter y la piedra filosofal",
+    "autor": "J.K. Rowling",
+    "imagen_url": "https://m.media-amazon.com/images/I/51uxZ1EkT4L.jpg",
+    "autor_imagen_url": "https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/8cigckin175jtpsk3gs361r4ss.jpg",
+    "sinopsis": "Las aventuras de un niño huérfano que descubre que es un mago y asiste a una escuela de magia.",
+    "categoria": "Fantasía"
+  },
+  "6":{
+    "nombre": "Matar un ruiseñor",
+    "autor": "Harper Lee",
+    "imagen_url": "https://m.media-amazon.com/images/I/81+j6JIEweL._AC_UF1000,1000_QL80_.jpg",
+    "autor_imagen_url": "https://s1.eestatic.com/2016/02/19/cultura/libros/harper_lee-premios-libros_103501361_1409567_1706x1280.jpg",
+    "sinopsis": "La historia de una niña llamada Scout Finch y su padre, un abogado, en Alabama durante la Gran Depresión.",
+    "categoria": "Ficción literaria"
+  },
+  "7":{
+    "nombre": "El retrato de Dorian Gray",
+    "autor": "Oscar Wilde",
+    "imagen_url": "https://www.planetadelibros.com.mx/usuaris/libros/fotos/383/m_libros/382805_portada_el-retrato-de-dorian-gray_oscar-wilde_202307191606.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Oscar_Wilde_portrait.jpg",
+    "sinopsis": "El joven Dorian desea permanecer por siempre joven y bello, y que, a cambio, su retrato sea el que envejezca. Seducido por un aristócrata cínico, Dorian disfruta del placer y los excesos, lleva a otras personas a la perdición y no duda en cometer un asesinato.",
+    "categoria": "Clásico"
+  },
+  "8":{
+    "nombre": "La metamorfosis",
+    "autor": "Franz Kafka",
+    "imagen_url": "https://images.cdn3.buscalibre.com/fit-in/360x360/7c/f8/7cf84202b1f8676cee2ea47dc152ba1b.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Franz_Kafka%2C_1923.jpg/1200px-Franz_Kafka%2C_1923.jpg",
+    "sinopsis": "La historia de Gregor Samsa, quien se despierta una mañana transformado en un insecto gigante.",
+    "categoria": "Ficción literaria"
+  },
+  "9":{
+    "nombre": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes",
+    "imagen_url": "https://www.elsotano.com/imagenes_grandes/9788408/978840827088.JPG",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Cervantes_J%C3%A1uregui.jpg/1200px-Cervantes_J%C3%A1uregui.jpg",
+    "sinopsis": "Las aventuras de un caballero soñador y su fiel escudero, Sancho Panza.",
+    "categoria": "Clásico"
+  },
+  "10":{
+    "nombre": "Las crónicas de Narnia: El león, la bruja y el armario",
+    "autor": "C.S. Lewis",
+    "imagen_url": "https://m.media-amazon.com/images/I/91QUMbfwnTL._AC_UF1000,1000_QL80_.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/C.s.lewis3.JPG",
+    "sinopsis": "Cuatro niños encuentran un mundo mágico al otro lado de un armario y se embarcan en una aventura para derrotar a la malvada bruja blanca.",
+    "categoria": "Fantasía"
+  },
+  "11":{
+    "nombre": "La odisea",
+    "autor": "Homero",
+    "imagen_url": "https://pendulo.com/imagenes_grandes/9788494/978849474587.GIF",
+    "autor_imagen_url": "https://c8.alamy.com/compes/cwyeg7/homero-poeta-de-la-antiguedad-autor-de-la-iliada-y-la-odisea-cwyeg7.jpg",
+    "sinopsis": "La historia del regreso del héroe griego Odiseo a su hogar después de la Guerra de Troya.",
+    "categoria": "Épico"
+  },
+  "12":{
+    "nombre": "El gran Gatsby",
+    "autor": "F. Scott Fitzgerald",
+    "imagen_url": "https://m.media-amazon.com/images/I/71kcZyIi2kL._AC_UF894,1000_QL80_.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/F_Scott_Fitzgerald_1921.jpg",
+    "sinopsis": "La historia del misterioso millonario Jay Gatsby y su obsesión por recuperar un amor del pasado.",
+    "categoria": "Ficción literaria"
+  },
+  "13":{
+    "nombre": "El principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "imagen_url": "https://m.media-amazon.com/images/I/71AVK5VIAzL._AC_UF1000,1000_QL80_.jpg",
+    "autor_imagen_url": "https://www.biografiasyvidas.com/biografia/s/fotos/saint_exupery.jpg",
+    "sinopsis": "Un piloto se encuentra varado en el desierto donde conoce a un pequeño príncipe de otro planeta.",
+    "categoria": "Infantil"
+  },
+  "14":{
+    "nombre": "Anna Karenina",
+    "autor": "Lev Tolstói",
+    "imagen_url": "https://m.media-amazon.com/images/I/71wLs1YK8yL._AC_UF1000,1000_QL80_.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/L.N.Tolstoy_Prokudin-Gorsky.jpg/800px-L.N.Tolstoy_Prokudin-Gorsky.jpg",
+    "sinopsis": "La historia de Anna Karenina, una mujer atrapada en un matrimonio infeliz, y su amorío con el oficial conde Vronsky.",
+    "categoria": "Clásico"
+  },
+  "15":{
+    "nombre": "Drácula",
+    "autor": "Bram Stoker",
+    "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_630063-MLU69932321881_062023-O.webp",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Bram_Stoker_1906.jpg",
+    "sinopsis": "La historia del conde Drácula, un vampiro que busca extender su influencia sobre Inglaterra.",
+    "categoria": "Terror"
+  },
+"16":  {
+    "nombre": "La casa de los espíritus",
+    "autor": "Isabel Allende",
+    "imagen_url": "https://m.media-amazon.com/images/I/914oLv5QzaL._AC_UF1000,1000_QL80_.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Isabel_Allende_Frankfurter_Buchmesse_2015_%28cropped%29.JPG",
+    "sinopsis": "La historia de la familia Trueba en Chile a lo largo de varias generaciones.",
+    "categoria": "Realismo mágico"
+  },
+  "17":{
+    "nombre": "Moby Dick",
+    "autor": "Herman Melville",
+    "imagen_url": "https://pendulo.com/imagenes_grandes/9788491/978849104961.GIF",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Herman_Melville_by_Joseph_O_Eaton.jpg",
+    "sinopsis": "La obsesión del capitán Ahab por cazar a la gran ballena blanca.",
+    "categoria": "Aventura"
+  },
+"18":  {
+    "nombre": "El guardián entre el centeno",
+    "autor": "J.D. Salinger",
+    "imagen_url": "https://m.media-amazon.com/images/I/713aAloHwDL._AC_UF894,1000_QL80_.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/J._D._Salinger_%28Catcher_in_the_Rye_portrait%29.jpg",
+    "sinopsis": "La historia de Holden Caulfield, un adolescente alienado que busca la autenticidad en un mundo falso.",
+    "categoria": "Ficción literaria"
+  },
+  "19":
+  {
+    "nombre": "Un mundo feliz",
+    "autor": "Aldous Huxley",
+    "imagen_url": "https://example.com/un_mundo_feliz.jpg",
+    "autor_imagen_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Aldous_Huxley_1947.png",
+    "sinopsis": "Una sociedad futurista donde la felicidad se ha convertido en la principal preocupación, pero a un costo terrible.",
+    "categoria": "Ciencia ficción"
+  },
+"20":  {
+    "nombre": "La sombra del viento",
+    "autor": "Carlos Ruiz Zafón",
+    "imagen_url": "https://m.media-amazon.com/images/I/911h1QUr7OL._AC_UF1000,1000_QL80_.jpg",
+    "autor_imagen_url": "https://pbs.twimg.com/profile_images/778168676377849856/m79mQ26I_400x400.jpg",
+    "sinopsis": "La historia de un niño que descubre un libro maldito y se embarca en una búsqueda para descubrir su historia.",
+    "categoria": "Ficción literaria"
   }
+}

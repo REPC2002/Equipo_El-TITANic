@@ -85,7 +85,7 @@ html_template = '''
             <h3> {{autor}} </h3>
             <!-- Información y Imagen del autor -->
             <div class="author_info">
-                <img src="../Images/Authors/book1.jpg">
+                <img src="{{autor_imagen_url}}">
                 <p>
                     {{sinopsis}}
                 </p>
