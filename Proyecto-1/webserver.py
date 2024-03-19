@@ -23,21 +23,6 @@ class WebRequestHandler(BaseHTTPRequestHandler):
     def query_data(self):
         return dict(parse_qsl(self.url.query))
 
-    def search(self):
-        query_key = self.query_data.get('q')
-        if query_key:
-            html_content = r.get(query_key)
-            if html_content:
-                self.send_response(200)
-                self.send_header("Content-Type", "text/html")
-                self.end_headers()
-                self.wfile.write(html_content)
-                return
-
-        self.send_response(404)
-        self.end_headers()
-        error_message = "<h1>La clave no existe o no se proporcionó.</h1>"
-        self.wfile.write(error_message.encode("utf-8"))
 
     def cookies(self):
         return SimpleCookie(self.headers.get("Cookie"))
@@ -57,43 +42,70 @@ class WebRequestHandler(BaseHTTPRequestHandler):
         cookies["session_id"]["max-age"] = 1000
         self.send_header("Set-Cookie", cookies.output(header=""))
 
+# Inicio
     def do_GET(self):
         self.url_mapping_response()
 
+# Mapeo de rutas
     def url_mapping_response(self):
+        # (pattern, method)
         for pattern, method in mappings:
             match = self.get_params(pattern, self.path)
+            # Si existe la ruta
             if match is not None:
                 md = getattr(self, method)
                 md(**match)
                 return
-
+        # Sino error 404
         self.send_response(404)
         # self.send_header("Content-Type", "text/html")
         self.end_headers()
         error = f"<h1> Not found </h1>".encode("utf-8")
         self.wfile.write(error)
 
+# Checa si la ruta coincide con el patrón
     def get_params(self, pattern, path):
         match = re.match(pattern, path)
         if match:
             return match.groupdict()
 
+# /books/\d+
     def get_books(self, book_id):
+
+        # Obtiene el historial de libros
+        def getHistory():
+            session_id = self.get_session()
+            bookKey = f"{book_id}"
+            book_list = r.lrange(f"session: {session_id}", 0, -1)
+                
+            self.wfile.write("<h3>Historial</h3>".encode("utf-8"))
+            for book in book_list:
+                if book is bookKey.encode('utf-8'):
+                    continue
+                self.wfile.write(f"<br> <a href=/books/{book.decode()}> Libro: {book.decode()} </a>".encode("utf-8"))
+            return book_info, book_list, session_id
+
+#######################################################
+        
         session_id = self.get_session()
-        r.lpush(f"session: {session_id}", f"book: {book_id}")
+        bookKey = f"{book_id}"
         self.send_response(200)
         self.send_header("Content-Type", "text/html")
         self.write_session_cookie(session_id)
         self.end_headers()
-        book_info = r.get(f"book: {book_id}") or "<h1> No existe el libro </h1>".encode("utf-8")
+        book_info = r.get(bookKey) or "<h1> No existe el libro </h1>".encode("utf-8")
         self.wfile.write(book_info)
-        self.wfile.write(f"session: {session_id}".encode("utf-8"))
-        book_list = r.lrange(f"session: {session_id}", 0, 1)
+        self.wfile.write(f"<br>session: {session_id}".encode("utf-8"))
+        book_list = r.lrange(f"session: {session_id}", 0, -1)
+
+        if bookKey.encode('utf-8') not in book_list:
+            r.lpush(f"session: {session_id}", bookKey)
         for book in book_list:
-            self.wfile.write(f" book: {book}".encode("utf-8"))
+            self.wfile.write(f"<br> book: {book}".encode("utf-8"))
+
+        getHistory()
     
-   
+#  /
     def index(self):
         self.send_response(200)
         self.send_header("Content-Type", "text/html")
@@ -101,6 +113,35 @@ class WebRequestHandler(BaseHTTPRequestHandler):
         with open('html/index.html') as f:
             response = f.read()
         self.wfile.write(response.encode("utf-8"))
+
+# /search
+    def search(self):
+        query_key = self.query_data.get('q')
+        if query_key:
+            html_content = self.searchBooks(query_key)
+            if html_content:
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html")
+                self.end_headers()
+                self.wfile.write(html_content)
+                return
+
+        self.send_response(404)
+        self.end_headers()
+        error_message = "<h1>La clave no existe o no se proporcionó.</h1>"
+        self.wfile.write(error_message.encode("utf-8"))
+
+# Buscar libros
+    def searchBooks(self, query):
+        resultado = []
+        values = r.keys()
+        for value in values:
+            libro = r.get(value)
+            if libro and query.lower() in libro.decode('utf-8').lower():
+                resultado.append(f"<a href='/books/{value.decode('utf-8')}'>{libro.decode('utf-8')}</a>")
+
+        return f"<h2>Resultados</h2><br>{resultado}".encode("utf-8")
+
 
 if __name__ == "__main__":
     print("Server starting...")

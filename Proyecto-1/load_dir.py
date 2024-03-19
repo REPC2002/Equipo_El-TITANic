@@ -14,7 +14,7 @@ def load_dir(path):
                 html = file.read()                     
                 book_id = match.group(1)
                 create_index(book_id, html)
-                r.set(f"book: {book_id}", html)
+                r.set(f"{book_id}", html)
                 print(f"file {file} loaded into redis...")
 
 def create_index(book_id, html):
