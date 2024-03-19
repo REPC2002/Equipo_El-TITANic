@@ -103,3 +103,13 @@ términos de la búsqueda entre otras variables.
 * Puedes agregegar otros elementos a la página, imágenes, etc.
 * Es importante *no* darle estilo a la página.
 
+### Corriendo el programa
+Para correr el programa final, se necesitan ejecutar los scripts creados a través de los archivos python.
+```python
+python3 generate_book_html.py
+python3 generate_static_book_pages.py
+python3 webserver.py 
+```
+El primer comando, generara una lista de books_html dados por un archivos json, y los almacenara en redis
+El segundo comando generara las paginas de los libros
+Y el tercero levantara el servidor donde trabajara GoodReads
